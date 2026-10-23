@@ -1,0 +1,492 @@
+[
+  {
+    "id": "url-inspector",
+    "name": "Анализатор URL",
+    "description": "Разбирает URL на домен, протокол, порт, параметры и признаки риска без открытия сайта.",
+    "category": "url",
+    "mode": "client"
+  },
+  {
+    "id": "punycode-check",
+    "name": "Проверка IDN/Punycode",
+    "description": "Показывает домен в ASCII и Unicode-представлении, чтобы заметить похожие символы.",
+    "category": "url",
+    "mode": "client"
+  },
+  {
+    "id": "url-shortener-check",
+    "name": "Проверка коротких ссылок",
+    "description": "Объясняет риски коротких ссылок и помогает проверить конечный адрес вручную безопасным способом.",
+    "category": "url",
+    "mode": "guide"
+  },
+  {
+    "id": "domain-age-check",
+    "name": "Проверка возраста домена",
+    "description": "Инструкция по проверке даты регистрации домена через публичные WHOIS/RDAP-сервисы.",
+    "category": "domain",
+    "mode": "guide"
+  },
+  {
+    "id": "rdap-lookup",
+    "name": "RDAP справка",
+    "description": "Формирует безопасную ссылку на RDAP-запрос для домена.",
+    "category": "domain",
+    "mode": "client"
+  },
+  {
+    "id": "dns-record-guide",
+    "name": "DNS-проверка",
+    "description": "Чек-лист проверки A, AAAA, MX, TXT, CAA и NS записей.",
+    "category": "domain",
+    "mode": "guide"
+  },
+  {
+    "id": "tls-check-guide",
+    "name": "Проверка TLS",
+    "description": "Инструкция по проверке сертификата, срока действия и цепочки доверия.",
+    "category": "web",
+    "mode": "guide"
+  },
+  {
+    "id": "security-headers-guide",
+    "name": "HTTP-заголовки",
+    "description": "Проверяет понимание CSP, HSTS, X-Content-Type-Options и других заголовков.",
+    "category": "web",
+    "mode": "guide"
+  },
+  {
+    "id": "password-strength",
+    "name": "Оценка пароля локально",
+    "description": "Оценивает длину и разнообразие символов в браузере; пароль никуда не отправляется.",
+    "category": "privacy",
+    "mode": "client"
+  },
+  {
+    "id": "passphrase-generator",
+    "name": "Генератор парольной фразы",
+    "description": "Создаёт случайную фразу в браузере с использованием криптографического генератора.",
+    "category": "privacy",
+    "mode": "client"
+  },
+  {
+    "id": "hash-demo",
+    "name": "Демо SHA-256",
+    "description": "Считает SHA-256 введённого текста в браузере через Web Crypto API.",
+    "category": "crypto",
+    "mode": "client"
+  },
+  {
+    "id": "base64-encode",
+    "name": "Base64 кодирование",
+    "description": "Кодирует текст в Base64 локально в браузере.",
+    "category": "crypto",
+    "mode": "client"
+  },
+  {
+    "id": "base64-decode",
+    "name": "Base64 декодирование",
+    "description": "Декодирует Base64 локально и сообщает об ошибке формата.",
+    "category": "crypto",
+    "mode": "client"
+  },
+  {
+    "id": "url-encode",
+    "name": "URL-кодирование",
+    "description": "Кодирует компонент URL в браузере.",
+    "category": "crypto",
+    "mode": "client"
+  },
+  {
+    "id": "url-decode",
+    "name": "URL-декодирование",
+    "description": "Декодирует компонент URL в браузере.",
+    "category": "crypto",
+    "mode": "client"
+  },
+  {
+    "id": "jwt-inspector",
+    "name": "JWT просмотрщик",
+    "description": "Показывает заголовок и payload JWT без проверки подписи; не вставляйте реальные секреты.",
+    "category": "web",
+    "mode": "client"
+  },
+  {
+    "id": "email-header-guide",
+    "name": "Разбор email-заголовков",
+    "description": "Чек-лист анализа From, Reply-To, Return-Path, Received, SPF/DKIM/DMARC.",
+    "category": "email",
+    "mode": "guide"
+  },
+  {
+    "id": "phishing-signs",
+    "name": "Признаки фишинга",
+    "description": "Интерактивный чек-лист признаков подозрительного сообщения.",
+    "category": "awareness",
+    "mode": "client"
+  },
+  {
+    "id": "email-domain-check",
+    "name": "Проверка домена отправителя",
+    "description": "Сравнивает домен отправителя с ожидаемым брендом и объясняет похожие написания.",
+    "category": "email",
+    "mode": "client"
+  },
+  {
+    "id": "qr-safety",
+    "name": "Безопасность QR",
+    "description": "Чек-лист проверки ссылки из QR до открытия.",
+    "category": "awareness",
+    "mode": "guide"
+  },
+  {
+    "id": "attachment-safety",
+    "name": "Безопасность вложений",
+    "description": "Рекомендации по проверке вложений без открытия подозрительных файлов.",
+    "category": "awareness",
+    "mode": "guide"
+  },
+  {
+    "id": "incident-checklist",
+    "name": "План реагирования",
+    "description": "Пошаговый чек-лист первых действий при подозрении на инцидент.",
+    "category": "incident",
+    "mode": "client"
+  },
+  {
+    "id": "account-hardening",
+    "name": "Защита аккаунта",
+    "description": "Рекомендации по MFA, passkeys, резервным кодам и проверке активных сессий.",
+    "category": "privacy",
+    "mode": "guide"
+  },
+  {
+    "id": "telegram-hardening",
+    "name": "Защита Telegram",
+    "description": "Инструкция по двухэтапной аутентификации, устройствам и настройкам приватности.",
+    "category": "telegram",
+    "mode": "guide"
+  },
+  {
+    "id": "browser-hardening",
+    "name": "Защита браузера",
+    "description": "Чек-лист обновлений, разрешений, расширений и безопасного профиля.",
+    "category": "privacy",
+    "mode": "guide"
+  },
+  {
+    "id": "device-hardening",
+    "name": "Защита устройства",
+    "description": "Базовый чек-лист обновлений, блокировки экрана, шифрования и резервных копий.",
+    "category": "privacy",
+    "mode": "guide"
+  },
+  {
+    "id": "backup-plan",
+    "name": "План резервного копирования",
+    "description": "Помогает составить схему 3-2-1 для личных и рабочих данных.",
+    "category": "incident",
+    "mode": "guide"
+  },
+  {
+    "id": "privacy-audit",
+    "name": "Аудит приватности",
+    "description": "Чек-лист минимизации публичных персональных данных.",
+    "category": "privacy",
+    "mode": "guide"
+  },
+  {
+    "id": "exif-guide",
+    "name": "Метаданные файлов",
+    "description": "Инструкция по удалению EXIF перед публикацией фотографий.",
+    "category": "privacy",
+    "mode": "guide"
+  },
+  {
+    "id": "file-hash-guide",
+    "name": "Хеш файла",
+    "description": "Как получить SHA-256 файла штатными средствами Windows/macOS/Linux.",
+    "category": "forensics",
+    "mode": "guide"
+  },
+  {
+    "id": "log-triage",
+    "name": "Первичный разбор логов",
+    "description": "Подсказывает безопасные поля для первичной сортировки журналов событий.",
+    "category": "forensics",
+    "mode": "guide"
+  },
+  {
+    "id": "ioc-notes",
+    "name": "Карточка IOC",
+    "description": "Шаблон фиксации индикаторов компрометации с источником и временем.",
+    "category": "forensics",
+    "mode": "client"
+  },
+  {
+    "id": "incident-timeline",
+    "name": "Хронология инцидента",
+    "description": "Создаёт шаблон временной шкалы расследования.",
+    "category": "forensics",
+    "mode": "client"
+  },
+  {
+    "id": "risk-matrix",
+    "name": "Матрица риска",
+    "description": "Рассчитывает простую оценку риска по вероятности и воздействию.",
+    "category": "planning",
+    "mode": "client"
+  },
+  {
+    "id": "asset-inventory",
+    "name": "Инвентаризация активов",
+    "description": "Шаблон учёта устройств, владельцев, критичности и обновлений.",
+    "category": "planning",
+    "mode": "client"
+  },
+  {
+    "id": "patch-planner",
+    "name": "План обновлений",
+    "description": "Помогает приоритизировать исправления по критичности и доступности патча.",
+    "category": "planning",
+    "mode": "guide"
+  },
+  {
+    "id": "mfa-checklist",
+    "name": "MFA чек-лист",
+    "description": "Проверяет, какие аккаунты защищены MFA и где нужны резервные методы.",
+    "category": "privacy",
+    "mode": "client"
+  },
+  {
+    "id": "backup-checklist",
+    "name": "Проверка резервных копий",
+    "description": "План тестового восстановления и контроля резервных копий.",
+    "category": "incident",
+    "mode": "client"
+  },
+  {
+    "id": "secure-sharing",
+    "name": "Безопасная передача файлов",
+    "description": "Рекомендации по ссылкам с ограниченным сроком и минимальными правами.",
+    "category": "privacy",
+    "mode": "guide"
+  },
+  {
+    "id": "suspicious-process-guide",
+    "name": "Подозрительные процессы",
+    "description": "Безопасный чек-лист проверки неизвестного процесса в ОС.",
+    "category": "forensics",
+    "mode": "guide"
+  },
+  {
+    "id": "windows-firewall-guide",
+    "name": "Windows Firewall",
+    "description": "Инструкция по проверке базовых настроек брандмауэра Windows.",
+    "category": "windows",
+    "mode": "guide"
+  },
+  {
+    "id": "windows-update-guide",
+    "name": "Windows Update",
+    "description": "Проверка статуса обновлений и перезагрузки после патчей.",
+    "category": "windows",
+    "mode": "guide"
+  },
+  {
+    "id": "linux-permission-guide",
+    "name": "Права Linux",
+    "description": "Справка по принципу наименьших привилегий и безопасной проверке прав.",
+    "category": "linux",
+    "mode": "guide"
+  },
+  {
+    "id": "ssh-hardening",
+    "name": "Укрепление SSH",
+    "description": "Чек-лист ключей, запрета root-входа, обновлений и ограничений доступа.",
+    "category": "linux",
+    "mode": "guide"
+  },
+  {
+    "id": "wifi-safety",
+    "name": "Безопасность Wi-Fi",
+    "description": "Рекомендации по WPA2/3, гостевой сети, обновлению роутера и WPS.",
+    "category": "network",
+    "mode": "guide"
+  },
+  {
+    "id": "network-inventory",
+    "name": "Инвентаризация сети",
+    "description": "Шаблон разрешённой инвентаризации собственных сетевых устройств.",
+    "category": "network",
+    "mode": "client"
+  },
+  {
+    "id": "port-concepts",
+    "name": "Справка по портам",
+    "description": "Объясняет распространённые порты и риски ненужных открытых служб.",
+    "category": "network",
+    "mode": "guide"
+  },
+  {
+    "id": "http-status-guide",
+    "name": "HTTP-коды",
+    "description": "Справочник по основным классам HTTP-статусов.",
+    "category": "web",
+    "mode": "client"
+  },
+  {
+    "id": "regex-playground",
+    "name": "Regex-песочница",
+    "description": "Проверяет регулярное выражение на примере локально в браузере.",
+    "category": "developer",
+    "mode": "client"
+  },
+  {
+    "id": "json-formatter",
+    "name": "JSON форматтер",
+    "description": "Форматирует и проверяет JSON локально.",
+    "category": "developer",
+    "mode": "client"
+  },
+  {
+    "id": "timestamp-converter",
+    "name": "Конвертер времени",
+    "description": "Переводит Unix timestamp в дату и обратно.",
+    "category": "developer",
+    "mode": "client"
+  },
+  {
+    "id": "uuid-generator",
+    "name": "UUID генератор",
+    "description": "Создаёт UUID в браузере.",
+    "category": "developer",
+    "mode": "client"
+  },
+  {
+    "id": "random-token",
+    "name": "Генератор тестового токена",
+    "description": "Создаёт случайный тестовый токен локально; не предназначен для замены управления секретами.",
+    "category": "developer",
+    "mode": "client"
+  },
+  {
+    "id": "text-diff",
+    "name": "Сравнение текста",
+    "description": "Показывает строки, отличающиеся между двумя текстовыми версиями.",
+    "category": "developer",
+    "mode": "client"
+  },
+  {
+    "id": "url-list-cleaner",
+    "name": "Очистка списка URL",
+    "description": "Удаляет дубликаты и пустые строки из списка URL локально.",
+    "category": "developer",
+    "mode": "client"
+  },
+  {
+    "id": "csv-to-json",
+    "name": "CSV → JSON",
+    "description": "Преобразует простой CSV в JSON локально; сложные CSV с вложенными кавычками могут требовать спец. инструмента.",
+    "category": "developer",
+    "mode": "client"
+  },
+  {
+    "id": "security-policy-template",
+    "name": "Шаблон политики",
+    "description": "Создаёт базовый шаблон политики безопасности для небольшой команды.",
+    "category": "planning",
+    "mode": "client"
+  },
+  {
+    "id": "awareness-quiz",
+    "name": "Квиз по фишингу",
+    "description": "Мини-тест по распознаванию фишинга с объяснениями.",
+    "category": "awareness",
+    "mode": "client"
+  },
+  {
+    "id": "safe-simulation-plan",
+    "name": "План учебной симуляции",
+    "description": "Планирует согласованную фишинг-симуляцию без сбора паролей и кодов.",
+    "category": "awareness",
+    "mode": "guide"
+  },
+  {
+    "id": "report-template",
+    "name": "Шаблон отчёта",
+    "description": "Создаёт основу отчёта о найденной проблеме безопасности.",
+    "category": "planning",
+    "mode": "client"
+  },
+  {
+    "id": "security-glossary",
+    "name": "Словарь безопасности",
+    "description": "Краткие определения ключевых терминов ИБ.",
+    "category": "learning",
+    "mode": "client"
+  },
+  {
+    "id": "learning-roadmap",
+    "name": "Учебный маршрут",
+    "description": "Составляет стартовый план изучения кибербезопасности.",
+    "category": "learning",
+    "mode": "client"
+  },
+  {
+    "id": "secure-by-default",
+    "name": "Secure-by-default",
+    "description": "Чек-лист безопасных настроек для нового проекта.",
+    "category": "planning",
+    "mode": "guide"
+  },
+  {
+    "id": "api-key-hygiene",
+    "name": "Гигиена API-ключей",
+    "description": "Рекомендации по хранению, ротации и ограничению секретов.",
+    "category": "developer",
+    "mode": "guide"
+  },
+  {
+    "id": "dependency-hygiene",
+    "name": "Безопасность зависимостей",
+    "description": "Чек-лист обновления и проверки зависимостей проекта.",
+    "category": "developer",
+    "mode": "guide"
+  },
+  {
+    "id": "responsible-disclosure",
+    "name": "Ответственное раскрытие",
+    "description": "Шаблон безопасного сообщения владельцу системы о найденной проблеме.",
+    "category": "learning",
+    "mode": "client"
+  },
+  {
+    "id": "threat-model-lite",
+    "name": "Мини-модель угроз",
+    "description": "Структурирует активы, угрозы, меры защиты и остаточные риски.",
+    "category": "planning",
+    "mode": "client"
+  },
+  {
+    "id": "security-news-checklist",
+    "name": "Проверка новости о взломе",
+    "description": "Чек-лист проверки источника, даты, первичных доказательств и масштаба.",
+    "category": "learning",
+    "mode": "guide"
+  },
+  {
+    "id": "cookie-safety",
+    "name": "Безопасность cookie",
+    "description": "Объясняет Secure, HttpOnly, SameSite и почему нельзя передавать cookie третьим лицам.",
+    "category": "web",
+    "mode": "guide"
+  },
+  {
+    "id": "secure-config-review",
+    "name": "Проверка конфигурации",
+    "description": "Универсальный чек-лист ревью безопасной конфигурации приложения перед релизом.",
+    "category": "planning",
+    "mode": "guide"
+  }
+]

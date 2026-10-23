@@ -1,0 +1,15 @@
+{
+  "name": "cyberlab-defensive-toolkit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Defensive cybersecurity learning dashboard and Telegram bot for Vercel",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "check": "node scripts/check-project.js",
+    "smoke": "node scripts/smoke-test.mjs"
+  },
+  "type": "module"
+}

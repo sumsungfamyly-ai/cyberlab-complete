@@ -1,0 +1,2 @@
+asset_id,asset_name,owner,environment,criticality,patch_status,last_review,next_action
+A-001,example-service,team@example.invalid,production,high,review-required,YYYY-MM-DD,assign-owner
